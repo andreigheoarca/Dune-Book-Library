@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Trade Gothic Next Heavy";
+  src: url("./Typeface/TradeGothicNextLTPro-Hv.otf") format("opentype");
+}
+@font-face {
+  font-family: "Trade Gothic Next Bold";
+  src: url("./Typeface/TradeGothicNextLTPro-Bd.otf") format("opentype");
+}
+@font-face {
+  font-family: "Trade Gothic Next Regular";
+  src: url("./Typeface/TradeGothicNextLTPro-Rg.otf") format("opentype");
+}
+
+:root {
+  --main-background-color: #1f1f1f;
+  --clr-white: #fcfcfc;
+  --clr-orange-shade-1: #e85d04;
+  --clr-orange-shade-2: #f48c06;
+  --clr-orange-shade-3: #f35229;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-background-color);
+}
+
+h1 {
+  position: absolute;
+  font-family: "Trade Gothic Next Heavy";
+  font-size: 8.5rem;
+  color: var(--clr-white);
+  letter-spacing: -0.05rem;
+  left: 4.688rem;
+  top: 1.25rem;
+}
+
+h2 {
+  position: absolute;
+  font-family: "Trade Gothic Next Bold";
+  font-size: 89px;
+  color: var(--clr-white);
+  left: 75px;
+  top: 154px;
+}
+
+.form-container {
+  position: relative;
+  width: 9.5rem;
+  height: 2.188rem;
+  left: 84rem;
+  top: 4.438rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #fafafa;
+  border-radius: 5.25rem;
+}
+
+.form-container input {
+  background: none;
+  outline: none;
+  appearance: none;
+  border: none;
+  font-family: "Trade Gothic Next Regular";
+  font-size: 0.875rem;
+  color: var(--clr-white);
+  letter-spacing: 0.05rem;
+}
+
+.overview h2 {
+  top: 24rem;
+  left: 1rem;
+  font-size: 4rem;
+}
+
+.overview p {
+  font-family: "Trade Gothic Next Regular";
+  font-size: 0.75rem;
+  padding-left: 1rem;
+  color: var(--main-background-color);
+}
+
+.dune-vector {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 564px;
+  width: 125rem;
+  z-index: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.books {
+  width: 300px;
+  margin: 5rem;
+  background: var(--clr-white);
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  top: 24rem;
+  z-index: 1;
+}
+
+.books img {
+  width: 100%;
+}
+
+.book-info {
+  color: #e85d04;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.book-info h3 {
+  margin-top: 0;
+}
+
+.book-info h2 {
+  margin-top: 10rem;
+  margin-left: -4rem;
+  font-size: 3rem;
+}
+
+.book-info span {
+  background: #f35229;
+  color: #fafafa;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-family: "Trade Gothic Next Regular";
+  font-size: 11px;
+}
+
+.overview h3 {
+  font-family: "Trade Gothic Next Bold";
+  font-size: 18px;
+  padding-left: 0.8rem;
+}
+
+.overview p {
+  padding: 0.5rem 0.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  h1 {
+    left: 0rem;
+  }
+  h2 {
+    left: 0rem;
+  }
+  .form-container {
+    position: relative;
+    top: 20rem;
+    left: 1rem;
+  }
+  #main {
+    position: relative;
+    top: -5rem;
+  }
+}
